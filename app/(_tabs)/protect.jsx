@@ -14,7 +14,7 @@ export default function ProtectScreen() {
       <ScrollView>
         <TouchableOpacity>
           <View style={styles.soscontainer}>
-            <Text style={styles.sosmessage}>SOS</Text>
+            <Text style={styles.sosMessage}>SOS</Text>
           </View>
         </TouchableOpacity>
 
@@ -62,15 +62,15 @@ const styles = StyleSheet.create({
     width: 350,
     height: 300,
     borderRadius: 30,
-    marginTop: 30,
+    marginTop: 20,
     alignItems: "center",
     justifyContent: "center",
   },
-  sosmessage: {
+  sosMessage: {
     color: "white",
     backgroundColor: "red",
     fontSize: 40,
-    padding: 40,
+    padding: 50,
     borderRadius: 300,
   },
   securityoptions: {
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
   },
   singlesecurtyoption: {
     backgroundColor: "#836FFF",
-    width: 350,
-    height: 100,
+    width: 300,
+    height: 60,
     borderRadius: 30,
     alignItems: "center",
     justifyContent: "center",
