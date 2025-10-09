@@ -36,7 +36,13 @@ export default function TabLayout() {
           backgroundColor: "#6A5ACD",
         },
         headerTintColor: "#fff",
-        headerTitleAlign: "center",
+        headerTitleAlign:"center",
+        // increase the font size
+        headerTitleStyle: {
+          fontSize: 30,
+          marginTop: 0,
+          paddingTop: 0
+        }
       })}
     >
       {/* Define each screen in the tab bar */}

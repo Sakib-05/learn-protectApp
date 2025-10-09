@@ -1,15 +1,97 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function ProtectScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Protect Screen</Text>
+      <ScrollView>
+        <TouchableOpacity>
+          <View style={styles.soscontainer}>
+            <Text style={styles.sosmessage}>SOS</Text>
+          </View>
+        </TouchableOpacity>
+
+        <View style={styles.securityoptions}>
+          <TouchableOpacity>
+            <View style={styles.singlesecurtyoption}>
+              <Ionicons name="location" size={35} color="white" />
+              <Text style={styles.securityoption_text}>Live Location</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <View style={styles.singlesecurtyoption}>
+              <Ionicons name="call" size={35} color="white" />
+              <Text style={styles.securityoption_text}>Fake call</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <View style={styles.singlesecurtyoption}>
+              <Ionicons name="volume-high" size={35} color="white" />
+              <Text style={styles.securityoption_text}>Siren</Text>
+            </View>
+          </TouchableOpacity>
+
+          <TouchableOpacity>
+            <View style={styles.singlesecurtyoption}>
+              <Ionicons name="checkbox" size={35} color="white" />
+              <Text style={styles.securityoption_text}>Check-in</Text>
+            </View>
+          </TouchableOpacity>
+
+        </View>
+      </ScrollView>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  container: { flex: 1, justifyContent: "center", alignItems: "center" },
   text: { fontSize: 20 },
+
+  soscontainer: {
+    backgroundColor: "#836FFF",
+    width: 350,
+    height: 300,
+    borderRadius: 30,
+    marginTop: 30,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  sosmessage: {
+    color: "white",
+    backgroundColor: "red",
+    fontSize: 40,
+    padding: 40,
+    borderRadius: 300,
+  },
+  securityoptions: {
+    flexDirection: "column",
+    gap:20,
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 30,
+  },
+  singlesecurtyoption: {
+    backgroundColor: "#836FFF",
+    width: 350,
+    height: 100,
+    borderRadius: 30,
+    alignItems: "center",
+    justifyContent: "center",
+    flexDirection: "row",
+    gap:10,
+  },
+  securityoption_text: {
+    color: "white",
+    fontSize: 30,
+  },
 });
