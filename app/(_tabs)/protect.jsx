@@ -54,13 +54,11 @@ export default function ProtectScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, justifyContent: "center", alignItems: "center" },
-  text: { fontSize: 20 },
-
+  container: {justifyContent: "center", alignItems: "center" },
   soscontainer: {
     backgroundColor: "#836FFF",
     width: 350,
-    height: 300,
+    height: 200,
     borderRadius: 30,
     marginTop: 20,
     alignItems: "center",

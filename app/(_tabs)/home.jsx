@@ -7,20 +7,25 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { useRouter } from 'expo-router'; // Step 1: Import the useRouter hook
 
 export default function HomeScreen() {
+  const router = useRouter(); // Step 2: Get the router object
+
   return (
     <View style={styles.container}>
       <Text style={styles.pathsTitle}>Select path</Text>
       <View style={styles.pathOptions}>
-        <TouchableOpacity>
+        {/* Step 3: Add onPress to navigate to the 'learn' tab */}
+        <TouchableOpacity onPress={() => router.push('/learn')}>
           <View style={styles.path}>
             <Ionicons name="book" size={35} color="white" />
             <Text style={styles.pathText}>Learn</Text>
           </View>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        {/* Step 3: Add onPress to navigate to the 'protect' tab */}
+        <TouchableOpacity onPress={() => router.push('/protect')}>
           <View style={styles.path}>
             <Ionicons name="shield" size={35} color="white" />
             <Text style={styles.pathText}>Protect</Text>

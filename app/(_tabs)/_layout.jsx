@@ -24,7 +24,7 @@ export default function TabLayout() {
             iconName = focused ? "person" : "person-outline";
           }
 
-          return <Ionicons name={iconName} size={size} color={color} />;
+          return <Ionicons name={iconName} size={30} color={color} />;
         },
         // Styling for the tab bar
         tabBarActiveTintColor: "#ffffffff", // This is a nice purple from the design
@@ -40,15 +40,14 @@ export default function TabLayout() {
         // increase the font size
         headerTitleStyle: {
           fontSize: 30,
-          marginTop: 0,
-          paddingTop: 0
+          marginTop: -40
         }
       })}
     >
       {/* Define each screen in the tab bar */}
       {/* name is the name of the jsx file and title is the name of the tab which will be displayed */}
       <Tabs.Screen name="home" options={{ title: "Home" }} />
-      <Tabs.Screen name="learn" options={{ title: "Learn & Protect" }} />
+      <Tabs.Screen name="learn" options={{ title: "Learn" }} />
       <Tabs.Screen name="protect" options={{title: "Protect",}}/>
       <Tabs.Screen name="practice" options={{title: "My Practice",}}/>
     </Tabs>
