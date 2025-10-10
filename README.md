@@ -25,8 +25,8 @@ To get the prototype running on your local machine and view it on your mobile de
 
 1. Clone the Repository
 
-git clone https://github.com/Sakib-05/learn-protectApp.git
-cd learn-protectapp
+``` git clone https://github.com/Sakib-05/learn-protectApp.git ```
+```cd learn-protectapp ```
 
 2. Install Dependencies
 This project uses npm. Run the following command to install all the necessary packages defined in package.json.
@@ -36,17 +36,16 @@ This project uses npm. Run the following command to install all the necessary pa
 3. Start the Development Server
 Run the start script. This will launch the Expo development server and display a QR code in your terminal.
 
-npx expo start
+``` npx expo start```
 
 4. View on Your Device
 
 Open the Expo Go app on your iOS or Android phone.
-
 Scan the QR code displayed in the terminal.
-
 The app will begin to build and load onto your device.
 
-Project Structure Explained
+# Project Structure Explained
+
 This project uses Expo Router, a modern file-based routing system. The navigation and screen structure are determined by the files and folders inside the app/ directory.
 
 app/_layout.jsx: This is the root layout of the app. It's currently not used but is required for more complex stack navigation.
@@ -59,7 +58,8 @@ app/(_tabs)/_layout.jsx: This is the layout for the tab group. It defines the Ta
 
 app/(_tabs)/[screen].jsx: Each file within this folder (e.g., home.jsx, learn.jsx) automatically becomes a screen in the tab navigator.
 
-Implemented Prototype Features
+# Implemented Prototype Features
+
 Tab-based Navigation: A fully functional bottom tab bar allowing navigation between the four main sections: Home, Learn, Protect, and My Practice.
 
 Home Screen: Includes placeholder buttons that successfully navigate the user to the Learn and Protect tabs.
