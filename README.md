@@ -31,7 +31,7 @@ cd learn-protectapp
 2. Install Dependencies
 This project uses npm. Run the following command to install all the necessary packages defined in package.json.
 
-*** npm install ***
+``` npm install ```
 
 3. Start the Development Server
 Run the start script. This will launch the Expo development server and display a QR code in your terminal.
