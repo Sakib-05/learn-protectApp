@@ -11,6 +11,8 @@ import { Ionicons } from "@expo/vector-icons";
 export default function PracticeScreen() {
   return (
     <View style={styles.container}>
+      {/* section for favourite videos */}
+      {/* all video cards are just placeholders for now */}
       <Text style={styles.text}>Favourites</Text>
       <View style={{marginBottom: 20 }}>
         <View style={styles.favouriteVideo}>
@@ -48,6 +50,7 @@ export default function PracticeScreen() {
         </View>
       </View>
 
+      {/* section for downloads */}
       <Text style={styles.text}>Downloads</Text>
       <View style={styles.favouriteVideo}>
           <Ionicons

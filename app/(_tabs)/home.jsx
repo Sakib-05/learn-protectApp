@@ -7,16 +7,18 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { useRouter } from 'expo-router'; // Step 1: Import the useRouter hook
+import { useRouter } from 'expo-router'; //Import the useRouter hook
 
 export default function HomeScreen() {
-  const router = useRouter(); // Step 2: Get the router object
+  const router = useRouter(); //Get the router object
 
   return (
     <View style={styles.container}>
+      {/* paths that be chosen by the user */}
       <Text style={styles.pathsTitle}>Select path</Text>
       <View style={styles.pathOptions}>
-        {/* Step 3: Add onPress to navigate to the 'learn' tab */}
+        
+        {/* button to go to the learn screen */}
         <TouchableOpacity onPress={() => router.push('/learn')}>
           <View style={styles.path}>
             <Ionicons name="book" size={35} color="white" />
@@ -24,7 +26,7 @@ export default function HomeScreen() {
           </View>
         </TouchableOpacity>
 
-        {/* Step 3: Add onPress to navigate to the 'protect' tab */}
+        {/* button to go to the protect screen */}
         <TouchableOpacity onPress={() => router.push('/protect')}>
           <View style={styles.path}>
             <Ionicons name="shield" size={35} color="white" />
@@ -32,6 +34,8 @@ export default function HomeScreen() {
           </View>
         </TouchableOpacity>
       </View>
+
+      {/* placeholder for the course */}
       <Text style={styles.title}>Continue course</Text>
       <TouchableOpacity>
         <View style={styles.courseStyle}>

@@ -27,7 +27,7 @@ export default function TabLayout() {
           return <Ionicons name={iconName} size={30} color={color} />;
         },
         // Styling for the tab bar
-        tabBarActiveTintColor: "#ffffffff", // This is a nice purple from the design
+        tabBarActiveTintColor: "#ffffffff", 
         tabBarInactiveTintColor: "white",
         tabBarStyle: {
           backgroundColor: "#6A5ACD",
@@ -37,7 +37,6 @@ export default function TabLayout() {
         },
         headerTintColor: "#fff",
         headerTitleAlign:"center",
-        // increase the font size
         headerTitleStyle: {
           fontSize: 30,
           marginTop: -40

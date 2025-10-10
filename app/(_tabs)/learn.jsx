@@ -19,6 +19,7 @@ export default function LearnScreen() {
         <View style={styles.categoryGrid}>
           {/* We'll create a reusable component for these buttons later, but for the prototype, this is clear and simple. */}
 
+          {/* the following are learn sections which are just placeholders for now */}
           <TouchableOpacity style={styles.categoryButton}>
             <Text style={styles.categoryText}>Escapes</Text>
             <Ionicons name="play-circle-outline" size={24} color="white" />
@@ -61,7 +62,7 @@ export default function LearnScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F0F0F8", // A very light purple background
+    backgroundColor: "#F0F0F8", 
   },
   content: {
     padding: 20,

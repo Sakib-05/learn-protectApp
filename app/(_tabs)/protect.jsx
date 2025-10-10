@@ -12,13 +12,18 @@ export default function ProtectScreen() {
   return (
     <View style={styles.container}>
       <ScrollView>
+        {/* the following buttons are placeholders for security features */}
+        {/* SOS button */}
         <TouchableOpacity>
           <View style={styles.soscontainer}>
             <Text style={styles.sosMessage}>SOS</Text>
           </View>
         </TouchableOpacity>
 
+        {/* security options */}
         <View style={styles.securityoptions}>
+
+          {/* live location */}
           <TouchableOpacity>
             <View style={styles.singlesecurtyoption}>
               <Ionicons name="location" size={35} color="white" />
@@ -26,6 +31,7 @@ export default function ProtectScreen() {
             </View>
           </TouchableOpacity>
 
+          {/* fake call*/}
           <TouchableOpacity>
             <View style={styles.singlesecurtyoption}>
               <Ionicons name="call" size={35} color="white" />
@@ -33,6 +39,7 @@ export default function ProtectScreen() {
             </View>
           </TouchableOpacity>
 
+          {/* siren */}
           <TouchableOpacity>
             <View style={styles.singlesecurtyoption}>
               <Ionicons name="volume-high" size={35} color="white" />
@@ -40,6 +47,7 @@ export default function ProtectScreen() {
             </View>
           </TouchableOpacity>
 
+          {/* check-in */}
           <TouchableOpacity>
             <View style={styles.singlesecurtyoption}>
               <Ionicons name="checkbox" size={35} color="white" />
